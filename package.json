@@ -1,6 +1,6 @@
 {
   "name": "dontbemichael",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "private": true,
   "description": "An AI office for small business owners: Michael, your office manager, runs a team of AI agents on your own computer.",
   "main": "out/main/index.js",
@@ -12,8 +12,8 @@
   },
   "scripts": {
     "predev": "node tools/name-dev-electron.cjs",
-    "dev": "electron-vite dev",
-    "build": "electron-vite build && npm run copy:main-assets",
+    "dev": "node api.js && electron-vite dev",
+    "build": "node api.js && electron-vite build && npm run copy:main-assets",
     "copy:main-assets": "node tools/copy-main-assets.cjs",
     "preview": "electron-vite preview",
     "postinstall": "electron-rebuild -f && node tools/ensure-pty-perms.cjs && node tools/patch-node-pty-conpty.cjs && node tools/name-dev-electron.cjs",
