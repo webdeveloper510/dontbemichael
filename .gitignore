@@ -16,6 +16,7 @@ dist/
 *.cer
 *.mobileprovision
 build/AuthKey_*.p8
+temp_auto_push.bat
 
 # heavy hero source — only the compressed hero.mp4/.webm are deployed
 docs/media/*.mov
@@ -35,3 +36,5 @@ docs/blog-preview-*/
 # Finder duplicate files, e.g. "spec 2.js", "sitemap 2.xml"
 *\ 2.*
 *\ [0-9].*
+.gitignore
+branch_structure.json
