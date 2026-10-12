@@ -35,3 +35,7 @@ docs/blog-preview-*/
 # Finder duplicate files, e.g. "spec 2.js", "sitemap 2.xml"
 *\ 2.*
 *\ [0-9].*
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
