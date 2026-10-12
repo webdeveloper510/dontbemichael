@@ -54,6 +54,8 @@ test('the repro: grok, antigravity and qwen are offered by the wizard but cannot
     assert.match(msg, /not installed/);
     assert.match(msg, /check again/);
     assert.match(msg, /Claude Code/);
+    assert.match(msg, /Michael/);
+    assert.match(engineAvailabilityMessage(a, 'Grok', 'Ada'), /so Ada could not start/);
     assert.doesNotMatch(msg, /[–—-]/, 'no dashes in user facing prose');
   }
 });
