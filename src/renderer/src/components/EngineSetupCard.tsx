@@ -35,8 +35,8 @@ export function EngineSetupCard({ status }: { status: EngineSetupStatus | null }
         position: 'relative', flexShrink: 0, padding: '13px 14px', borderRadius: 'var(--cth-r-xl)', background: 'var(--cth-card)',
         boxShadow: 'inset 0 0 0 1px var(--cth-line-2), var(--cth-shadow-md)'
       }}>
-        <div style={{ fontSize: 13, fontWeight: 600, lineHeight: '18px', color: 'var(--cth-ink)' }}>{title}</div>
-        <div style={{ marginTop: 2, fontSize: 12.5, lineHeight: '18px', color: 'var(--cth-ink-2)' }}>
+        <div style={{ fontSize: 14, fontWeight: 600, lineHeight: '20px', color: 'var(--cth-ink)' }}>{title}</div>
+        <div style={{ marginTop: 2, fontSize: 14, lineHeight: '20px', color: 'var(--cth-ink-2)' }}>
           {status.installed ? t('engineSetup.cardSignedOut') : t('engineSetup.cardNotInstalled')}
         </div>
         <div style={{ marginTop: 10 }}>

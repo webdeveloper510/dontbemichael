@@ -201,8 +201,8 @@ export function CompanyProfileFields({ value, onChange, parts, needsIndustry, mi
           display: 'flex', flexDirection: 'column', gap: 6, padding: 10,
           background: 'var(--cth-sky-light)', boxShadow: 'inset 0 0 0 1px var(--cth-line-2)'
         }}>
-          <span style={{ fontSize: 14, lineHeight: '19px', color: 'var(--cth-ink-900)' }}>{t('companyProfile.knowledgeHead')}</span>
-          <span style={{ fontSize: 14, lineHeight: '19px', color: 'var(--cth-ink-700)' }}>{t('companyProfile.knowledgeBody')}</span>
+          <span style={{ fontSize: 14, lineHeight: '20px', color: 'var(--cth-ink-900)' }}>{t('companyProfile.knowledgeHead')}</span>
+          <span style={{ fontSize: 14, lineHeight: '20px', color: 'var(--cth-ink-700)' }}>{t('companyProfile.knowledgeBody')}</span>
           {onOpenKnowledge && (
             <button type="button" onClick={onOpenKnowledge} style={{
               borderRadius: 'var(--cth-r-md)',
@@ -222,16 +222,16 @@ export function CompanyProfileFields({ value, onChange, parts, needsIndustry, mi
 function Field({ label, required, hint, children }: { label: string; required?: boolean; hint?: string; children: ReactNode }) {
   return (
     <label style={{ display: 'flex', flexDirection: 'column', gap: 4, minWidth: 0 }}>
-      <span style={{ fontSize: 12, fontWeight: 600, color: 'var(--cth-ink-2)' }}>{label}{required ? ' *' : ''}</span>
+      <span style={{ fontSize: 14, lineHeight: '20px', fontWeight: 600, color: 'var(--cth-ink-2)' }}>{label}{required ? ' *' : ''}</span>
       {children}
-      {hint && <span style={{ fontSize: 11.5, color: 'var(--cth-ink-3)' }}>{hint}</span>}
+      {hint && <span style={{ fontSize: 14, lineHeight: '20px', color: 'var(--cth-ink-3)' }}>{hint}</span>}
     </label>
   );
 }
 
 function Head({ children }: { children: ReactNode }) {
   return (
-    <div style={{ fontFamily: 'var(--cth-font-ui)', fontSize: 12, fontWeight: 600, color: 'var(--cth-ink)', marginTop: 4 }}>
+    <div style={{ fontFamily: 'var(--cth-font-ui)', fontSize: 14, lineHeight: '20px', fontWeight: 600, color: 'var(--cth-ink)', marginTop: 4 }}>
       {children}
     </div>
   );
@@ -243,6 +243,6 @@ const grid2: CSSProperties = { display: 'grid', gridTemplateColumns: '1fr 1fr', 
  *  missing required answer (aria-invalid) come from the `cth-input` class. */
 const fieldStyle: CSSProperties = {
   padding: '7px 10px', border: 'none', background: 'var(--cth-card)',
-  fontFamily: 'var(--cth-font-ui)', fontSize: 13, color: 'var(--cth-ink)',
+  fontFamily: 'var(--cth-font-ui)', fontSize: 14, color: 'var(--cth-ink)',
   minWidth: 0
 };
